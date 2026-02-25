@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚Book Explorer - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <nav class="bg-pink-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+  <span class="text-2xl">📚</span>
+  <h1 class="text-xl font-bold">Book Explorer</h1>
+</div>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-blue-200 font-semibold">Home</a>
+                <a href="favorites.html" class="hover:text-blue-200">Favorites</a>
+                <a href="about.html" class="hover:text-blue-200">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-blue-500 text-white py-12 text-center">
+        <h2 class="text-4xl font-bold mb-4">Discover Your Next Great Read</h2>
+        <div class="flex justify-center mt-6">
+            <input type="text" id="search-input" placeholder="Search for a book title..." class="p-3 rounded-l-lg w-64 md:w-96 text-black focus:outline-none">
+            <button id="search-btn" class="bg-yellow-500 text-blue-900 font-bold p-3 rounded-r-lg hover:bg-yellow-400">Search</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 flex-grow">
+        <div id="loading" class="text-center text-gray-600 text-xl hidden mt-10">Loading books...</div>
+        <div id="message" class="text-center text-red-500 text-xl hidden mt-10">No results found.</div>
+        
+        <div id="book-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+            </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+        <p>&copy; 2026 Book Explorer. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
