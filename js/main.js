@@ -7,7 +7,7 @@ const bookGrid = document.getElementById('book-grid');
 const loading = document.getElementById('loading');
 const message = document.getElementById('message');
 
-let currentBooks = []; // Temporarily store fetched books
+let currentBooks = []; 
 
 // Search Event Listener
 searchBtn.addEventListener('click', async () => {
