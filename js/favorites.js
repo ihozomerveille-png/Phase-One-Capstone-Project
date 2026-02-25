@@ -14,11 +14,11 @@ export function saveFavorite(book) {
 
 export function removeFavorite(bookKey) {
     let favorites = getFavorites();
-    favorites = favorites.filter(fav => fav.key !== bookKey);
+    favorites = favorites.filter(fav => fav.key !== bookKey); // Remove the book with the matching key
     localStorage.setItem('book_favorites', JSON.stringify(favorites));
 }
 
 export function isFavorite(bookKey) {
     const favorites = getFavorites();
     return favorites.some(fav => fav.key === bookKey);
-}
+} 
